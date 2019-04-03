@@ -2,7 +2,7 @@
 function loadPage(n=0){
   var pno=n;
   $.ajax({
-    url:"http://127.0.0.1:3000/products",
+    url:"http://127.0.0.1:5050/products",
     type:"get",
     data:{pno},
     dataType:"json", //自动JSON.parse()
