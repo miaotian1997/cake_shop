@@ -3,7 +3,7 @@ const bodyParser=require('body-parser');
 const userRouter=require('./router/user.js');
 //创建web服务器
 var server=express();
-server.listen(3000);
+server.listen(5050);
 //托管静态页面到public下
 server.use(express.static('public'));
 //使用body-parser中间件将post请求数据解析为对象
