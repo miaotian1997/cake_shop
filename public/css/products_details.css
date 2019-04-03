@@ -1,0 +1,270 @@
+/* 头部样式 */
+.container_box{
+	width:100%;	
+	background:#fff;
+  	position: fixed;
+	box-shadow:0 2px 2px 0 rgba(195,195,195,0.50);
+	z-index: 10;
+}
+/* 导航栏 */
+.header_nav{
+	width:1200px;
+	height:70px;
+	margin:0 auto;
+}
+/* 导航条 */
+.header_nav .nav_box+ul>li{
+	float:right;
+	font-size:16px;
+	line-height:70px;
+	margin-left:30px;
+}
+.header_nav .nav_box>li:first-child~li{
+	line-height:70px;
+}
+/* logo */
+.header_nav .nav_box img{
+	height:50px;
+	padding-top:10px;
+}
+.header_nav .nav_box li{
+	float:left;
+	font-size:16px;
+	margin-right:30px;
+	/* line-height:70px; */
+}
+.nav_box,.nav_box+ul:after,.cat-list>ul:after,.skip>ul>li:after{
+  content:"";
+	display:block;
+	clear:both;
+}
+/* 底部样式 */
+/* 底部 */
+.footer_frame{
+	width:100%;
+	background:#6c5e52;
+	color:#fff;
+}
+.footer_box{
+	width:1200px;
+	margin:0 auto;
+}
+.footer_logo img{
+	height:60px;
+	display: block;
+	margin: 0 auto;
+	padding-top:10px;
+}
+.footer_box{
+	margin-right:30px;
+}
+.footer_box ul li{
+	float:left;
+	font-size:18px;
+	margin-right:50px;
+	line-height:15px;
+}
+.footer_box ul li a{
+	color:#fff;
+	margin:0 auto;
+	font-size:15px;
+}
+.footer_box ul li b{
+	margin-left:50px;
+}
+.footer_icon{
+	width:150px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.footer_icon img{
+	height:30px;
+	width:30px;
+	margin-right:40px;
+}
+.footer_text{
+	text-align:center;
+	line-height:30px;
+	font-size:10px;
+	margin-top:-20px;
+}
+
+/* 主体样式 */ 
+.details-banner{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+	z-index: 0;
+}
+.details-banner .left img{
+	/* border: 1px solid rgb(31, 206, 7); */
+	width:1088px;
+	/* height:100px; */
+	position:absolute;	
+	top:75px;
+}
+/* .details-banner .left>img:first-child{
+	z-index:1;
+} */
+.details-banner .right{
+	/* border:1px solid royalblue; */
+	position:relative;
+	top:562px;
+	/* left:120px; */
+	float: right;
+}
+.details-banner .right ul>li>img{
+	/* border:1px solid rgb(224, 248, 3); */
+	width:88px;
+	height:48px;
+	border:1px solid #BB9772;
+	margin-top:10px;
+}
+.content-left{
+	width:484px;
+	height:419px;
+	margin-top:57%;
+}
+ .content .content-left .details-title{
+	font-size:20px;
+	line-height:28px;
+	padding:20px 0 0;
+}
+.content .content-left .sub-tiitle{
+	font-size:12px;
+    line-height:20px;
+    color: #FF3933;
+}
+.content .content-left .circle{
+	padding:20px 0;
+}
+.content .content-left .circle>a{
+	border:1px solid #e6ba7a;
+	padding: 0 6px 0 8px;
+	border-radius:10px;
+	font-size:13px;
+	color:#D5BFA7;
+	/* margin-left:5px;  */
+}
+.content .content-left .details-constituent{
+	width:484px;
+	height:50px;
+}
+.details-constituent img{
+	width:50px;
+	height:50px;
+}
+.details-constituent span{
+	display: inline-block;
+	font-size:13px;
+    height:50px;
+    vertical-align: middle;
+}
+.details-explain{
+	font-size:13px;
+	line-height:25px;
+}
+.content .content-left .i{
+	margin-top:25px;
+}
+ .content .content-left .i>img{
+	width:25px;
+	height:25px;
+	margin-top:2px;
+	vertical-align:middle;
+ }
+ .content .content-left .i>span{
+	width:484px;
+	height:25px;
+	font-size:13px;
+} 
+.content .content-left .sweet{
+	margin-top:10px;
+}
+.content .content-left .sweet img{
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+}
+.content .content-left .sweet span{
+	font-size:13px;
+}
+ .content .content-right .details-Specifications{
+	width:500px;
+	height:360px;
+	background:#333;
+} 
+.content-right{
+	position: relative;
+    top: -393px;
+    left: 596px;
+    width: 600px;
+    height: 0px;
+}
+.img22{
+	width: 300px;
+	height: 170px;
+}
+.content-right ul>li>img{
+	vertical-align: middle;
+	width:25px;
+}
+.ul_li{
+    width: 258px;
+    height: 225px;
+    margin: -156px -1px -194px 330px;
+}
+.ul_li li {
+	line-height: 28px;
+}
+.content-right ul>li>span{
+	font-size: 10px;
+}
+.content-right ul>li.monery{
+	font-size: 29px;
+	color: #C69C6D;
+}
+.p2{
+	margin: 147px 8px 0px 0px;
+	font-size: 13px;
+}
+.border2{
+	border: 1px solid #684029;
+	padding: 4px;
+	margin-left: 20px;
+}
+.gourou{
+	width: 36px;
+	height: 36px;
+	border: 1px solid #e7e0dd;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.p2 p{
+	padding: 20px;
+}
+button{
+	width: 167px;
+	height: 30px;
+	border: 1px solid #F4F4F4;
+	outline: none;
+}
+.btn2{
+	background: #684029;
+	color: #fff;
+	margin-left:10px; 
+}
+.btn1{
+	background: #F4F4F4;
+    color: #7A5844;
+}
+.details-picture{
+	font-size:13px;
+	line-height:25px;
+}
+.tutu{
+	text-align:center;
+	color: #999999;
+	font-size:13px;
+
+}

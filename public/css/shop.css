@@ -1,0 +1,16 @@
+
+.cart-goods-info .thead-ul{
+  margin:0 auto;
+  background: #FAFAFA;
+  font-size: 15px;
+   width: 1200px; 
+  border: 1px solid #E1E1E1;
+  margin-bottom:80px;
+  overflow: hidden;
+  line-height:44px;
+} 
+.cart-goods-info .thead-ul>li{
+  text-align: center;
+  float: left;
+  margin-left:175px; 
+}

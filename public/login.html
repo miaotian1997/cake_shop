@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>允陌cake小加</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<!-- 头部 -->
+<header id="header"></header>
+<!-- 登录 -->
+<section id="content">
+  <div class="content_box">
+    <!-- 账号密码登录 -->
+    <div class="form_log_box">
+      <form  class="log">
+        <p id="first">用户登录</p>
+        <p>
+          <input type="text" id="uname" placeholder="请输入您的账号">
+          <span id="uname-img"></span>
+        </p>
+        <p>
+          <input type="password" id="upwd" placeholder="输入密码">
+          <span id="upwd-img"></span>
+        </p>
+        <p class="but">
+          <input type="button" value="登录"   onclick="login1()"> 
+        </p>
+        <div class="remember">
+          <p>
+            <input type="checkbox" checked>记住账号
+            <span>忘记密码</span>
+            <span><a href="register.html">去注册</a></span>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- 引入底部 --> 
+
+<script src="./js/jquery-1.11.3.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/login.js"></script>
+<script>
+  function login1(){
+    //1.获取xhr
+    var xhr=new XMLHttpRequest();
+    //2.绑定监听
+    xhr.onreadystatechange=function(){
+      if(xhr.readyState==4 && xhr.status==200){
+        var result=xhr.responseText;
+       if(result=="1"){
+        alert("登录成功");
+        location.href="http://127.0.0.1:3000/index.html"
+        }else{
+         alert("登录失败");
+        //  location.href="http://127.0.0.1:3000/registr.html"
+        }
+        
+      }
+    }
+    //3.打开链接，创建请求
+    xhr.open("post","/user/login",true);
+    var formdata="uname="+uname.value+"&upwd="+upwd.value;
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    //4.发送请求
+    xhr.send(formdata);
+  }
+</script>
+
+</body>
+</html>

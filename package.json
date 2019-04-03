@@ -1,0 +1,27 @@
+{
+  "name": "cake_shop",
+  "version": "1.0.0",
+  "description": "cake_shop",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miaotian1997/cake_shop.git"
+  },
+  "keywords": [
+    "cake"
+  ],
+  "author": "mt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miaotian1997/cake_shop/issues"
+  },
+  "homepage": "https://github.com/miaotian1997/cake_shop#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+          content="width=device-width,initial-scale=1.0"/>
+  <title>允陌cake小加</title>
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<!-- 引入头部 -->
+<header id="header"></header>
+<!-- 注册 -->
+<section id="content">
+  <div class="content_box">
+    <div class="form_reg_box">
+      <form class="reg">
+        <p id="first">用户注册
+          <span>|</span>
+          <a href="login.html">用户登录</a>
+        </p>
+        <p>
+          <input type="text" id="uname" placeholder="请输入用户名">
+          <span id="uname-img"></span>
+        </p>
+        <p>
+          <input type="password" id="upwd" placeholder="8~12位字符，需同时包括英文和数字">
+          <span id="upwd-img"></span>
+        </p>
+        <p>
+          <input type="phone" id="phone" placeholder="请输入手机号码">
+          <span id="phone-img"></span>
+        </p>
+        <p>
+          <input type="birthday" id="birthday"  placeholder="请输入您的生日">
+        </p>
+        <p class=but>
+          <input type="button" value="注册"   onclick="register()">
+        </p>
+      </form>
+      <div class="reading">
+        <p>
+          <input type="checkbox" name="agree" checked>
+            <span>"已阅读并同意"允陌cake协议和隐私保护政策</span>
+          </p>
+        </div>
+      </div> 
+  </div>
+</section>  
+<!-- 引入底部 -->
+
+
+
+<script src="./js/jquery-1.11.3.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/register.js"></script>
+
+
+<script>
+var isRegister=false;//假定用户不存在
+function register(){
+  var xhr=new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.readyState==4&&xhr.status==200){
+      var result=xhr.responseText;
+      if(result==1){
+        alert("注册成功");location.href="http://127.0.0.1:3000/login.html";
+      }else{
+        alert("注册失败");
+      }
+    }
+  }
+  xhr.open("post","/user/register",true);
+  var formdata="uname="+uname.value+"&upwd="+upwd.value+"&phone="+phone.value+"&birthday="+birthday.value;
+  console.log(formdata);
+  xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+  xhr.send(formdata);
+}
+// function checkUpwd(){
+//   if(upwd1.value==upwd2.value){
+//     isRegister=true;
+//     upwdMsg.innerHTML="密码一致";
+//     console.log(isRegister);
+//   }else{
+//     isRegister=false;
+//     upwdMsg.innerHTML="密码不一致";
+//     console.log(isRegister);
+//   }
+// }
+function checkUname(){
+  var xhr=new XMLHttpRequest();
+  xhr.onreadystatechange=function(){
+    if(xhr.readyState==4&&xhr.status==200){
+      var result=xhr.responseText;
+      if(result=="0"){
+        unameMsg.innerHTML="可以注册";
+        isRegister=true;
+      }else{
+        unameMsg.innerHTML="该用户名已被注册";
+        isRegister=false;
+      }
+    }
+  }
+  xhr.open("get","/user/checkUname?uname="+uname.value,true);
+  xhr.send(null);
+}
+</script>
+
+</body>
+</html>

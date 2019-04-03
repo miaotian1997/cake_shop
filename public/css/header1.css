@@ -1,0 +1,87 @@
+.cake{
+  width:240px;
+  height:240px;
+  border:1px solid rgba(223, 223, 217, 0.5);
+  background-color:rgba(223, 223, 217, 0.5);
+  border-radius:10px;
+  margin-top: 50px;
+  display: none;
+  position: relative;
+  top:-50px;
+  left:-100px;
+}
+.cake1{ 
+  width:240px;
+  height:240px;
+  border:1px solid rgba(223, 223, 217, 0.5);
+  background-color:rgba(223, 223, 217, 0.5);
+  border-radius:10px;
+  margin-top: 50px;
+  display: none;
+  position: relative;
+  top:-50px;
+  left:-100px;
+}
+.cake2{
+  width:240px;
+  height:240px;
+  border:1px solid rgba(223, 223, 217, 0.5);
+  background-color:rgba(223, 223, 217, 0.5);
+  border-radius:10px;
+  margin-top: 50px;
+  display: none;
+  position: relative;
+  top:-50px;
+  left:-100px;
+}
+.cake3{
+  width:240px;
+  height:240px;
+  border:1px solid rgba(223, 223, 217, 0.5);
+  background-color:rgba(223, 223, 217, 0.5);
+  border-radius:10px;
+  margin-top: 50px;
+  display: none;
+  position: relative;
+  top:-50px;
+  left:-100px;
+}
+.cake a img{
+  width:80px;
+  height:80.17px;
+  float: left;
+}
+.cake1 a img{
+  width:80px;
+  height:80.17px;
+  float: left;
+}
+.cake2 a img{
+  width:80px;
+  height:80.17px;
+  float: left;
+}
+.cake3 a img{
+  width:80px;
+  height:80.17px;
+  float: left;
+}
+.nav_box>li{
+  width:32px;
+
+}
+.nav_box>li:hover .cake{
+  display: block
+}
+.nav_box>li:hover .cake1{
+  display: block
+}
+.nav_box>li:hover .cake2{
+  display: block
+}
+.nav_box>li:hover .cake3{
+  display: block
+}
+
+/* .nav_box>li>:nth-child(3) div:nth-child(2){
+} */
