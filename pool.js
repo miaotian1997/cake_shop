@@ -1,12 +1,12 @@
 const mysql=require('mysql');
 //创建连接池对象
 var pool=mysql.createPool({
-	host:'127.0.0.1',
-	post:'3306',
-	user:'root',
-	password:'',
-	database:'cake',
-	connectionLimit:20
+	host     : process.env.MYSQL_HOST,
+    port     : process.env.MYSQL_PORT,
+    user     : process.env.ACCESSKEY,
+    password : process.env.SECRETKEY,
+    database : 'app_' + process.env.APPNAME,
+	connectionLimit:3
 });
 
 
