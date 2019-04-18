@@ -1,7 +1,7 @@
 //首页1~4F数据交互
 (function(){
   $.ajax({
-  url:"http://127.0.0.1:5050/user/cake_list",
+  url:"user/cake_list",
   type:"get",
   //data:"",
   dataType:"json" //自动JSON.parse() 自动转换成数组
@@ -18,10 +18,10 @@
     var p=result[i];
     html+=` 
     <li>
-      <a href="http://127.0.0.1:5050/products_details.html" >
+      <a href="products_details.html" >
         <img src="${p.img_url}" alt="">
       </a>
-      <h5><a href="http://127.0.0.1:5050/products_details.html">${p.title}</a></h5>
+      <h5><a href="products_details.html">${p.title}</a></h5>
       <p class="intro">
         <span>${p.details}</span>
       </p>

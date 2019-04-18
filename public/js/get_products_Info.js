@@ -1,7 +1,7 @@
 //首页1~4F数据交互
 (function(){
     $.ajax({
-    url:"http://127.0.0.1:5050/user/getPro",
+    url:"user/getPro",
     type:"get",
     //data:"",
     dataType:"json" //自动JSON.parse() 自动转换成数组
