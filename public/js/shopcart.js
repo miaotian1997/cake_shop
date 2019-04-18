@@ -1,7 +1,7 @@
 $(function () {
 	//请求购物车数据开始
 	var uid = location.search.split("=")[1];
-	console.log(uid)
+	//console.log(uid)
 	$.ajax({
 		url: "shopcart",
 		type: "get",
@@ -9,7 +9,7 @@ $(function () {
 		dataType: "json",
 		success: function (result) {
 			//var result=result.data;
-			console.log(result.data)
+			//console.log(result.data)
 			var html = ""
 			for (var res of result.data) {
 				html += `  
@@ -48,18 +48,18 @@ $(function () {
 			$(".btn-jian").click(function () {
 				var val = $(this).next().val();
 				val--;
-				//    console.log(111)
+				//    //console.log(111)
 				if (val < 1) {
 					val = 1;
 				}
 				$(this).next().val(val)
 			})
 			// var price = $(".list-price").html().slice(1, );
-			// console.log(price);
+			// //console.log(price);
 			// var count = $(".list-count input").val();
-			// console.log(count);
+			// //console.log(count);
 			// var sum=price*count
-			// console.log
+			// //console.log
 			// $(".list-sum").html(price * count);
 		}
 	})//请求购物车数据结束

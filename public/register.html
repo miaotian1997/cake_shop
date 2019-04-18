@@ -75,7 +75,7 @@ function register(){
   }
   xhr.open("post","/user/register",true);
   var formdata="uname="+uname.value+"&upwd="+upwd.value+"&phone="+phone.value+"&birthday="+birthday.value;
-  console.log(formdata);
+  //console.log(formdata);
   xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
   xhr.send(formdata);
 }
@@ -83,11 +83,11 @@ function register(){
 //   if(upwd1.value==upwd2.value){
 //     isRegister=true;
 //     upwdMsg.innerHTML="密码一致";
-//     console.log(isRegister);
+//     //console.log(isRegister);
 //   }else{
 //     isRegister=false;
 //     upwdMsg.innerHTML="密码不一致";
-//     console.log(isRegister);
+//     //console.log(isRegister);
 //   }
 // }
 function checkUname(){

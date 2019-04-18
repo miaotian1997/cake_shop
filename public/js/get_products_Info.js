@@ -10,8 +10,8 @@
     // ↓
     .then(function(result){
     var result=result.data; 
-        console.log(result)
-        console.log(result.length)
+        //console.log(result)
+        //console.log(result.length)
     // 1F数据交互
     var html="";
     for(var i=0;i<result.length;i++){
@@ -45,7 +45,7 @@
         `
     }
       var dd=document.querySelector("#one001");
-      console.log(dd);
+      //console.log(dd);
       dd.innerHTML=html;
   
     
